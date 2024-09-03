@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpLib\CSharpLib.csproj" />
+    <ProjectReference Include="..\VBLib\VBLib.vbproj" />
+  </ItemGroup>
+
 </Project>

@@ -9,19 +9,20 @@ namespace CSharpLib
     /// <summary>
     /// This is the CSharp class that will be used in the LanguageComparison project
     /// </summary>
-    
-    public class Demos
+
+    public class Demos : IDemos
     {
-        public List<string> LoadFile(){
+        public List<string> LoadFile()
+        {
             List<string> outputs = [];
             List<string> lines = File.ReadAllLines(@"C:\temp\test.txt").ToList();
-            for(int i = 0; i < lines.Count; i++)
+            for (int i = 0; i < lines.Count; i++)
             {
-                if(i % 2 == 0)
+                if (i % 2 == 0)
                 {
                     outputs.Add(lines[i]);
                 }
-                
+
             }
             return outputs;
         }
